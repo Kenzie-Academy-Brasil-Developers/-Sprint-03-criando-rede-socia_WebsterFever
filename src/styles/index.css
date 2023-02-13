@@ -1,0 +1,260 @@
+.first__item , .user__info {
+  padding-top: 130px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  width: 50%;
+}
+
+.list__item {
+  display: flex;
+  align-items: flex-start;
+
+  /* margin-left: 150px; */
+  margin-top: 50px;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 150px;
+}
+
+.head__item {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding-left: 15px;
+}
+
+
+
+.text__title{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  border: 2px solid red;
+  margin-right: 70px;
+
+}
+
+
+.paragraph__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 50%;
+  background-color: red;
+  margin-top: 150px;
+}
+
+.button__submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 630px;
+  width: 45px;
+  height: 17px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #dee2e6;
+
+  border-radius: 8px;
+}
+.input_container {
+  border: 1px solid black;
+  height: 40px;
+}
+
+.paragraph__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.paragraph__text2 {
+  width: 50%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* text-overflow :ellipsis; */
+  /* width: 5ch; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.button__post {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background: #212529;
+  border: 2px solid #212529;
+  border-radius: 4px;
+}
+.post__item {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  flex-wrap: nowrap;
+  width: 50%;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.imgg {
+  margin-left: 30px;
+  width: 22.76px;
+  height: 20px;
+  color: rgba(33, 37, 41, 0.5);
+  margin-top: 4px;
+}
+
+.number {
+  width: 17px;
+  height: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.cart__container {
+  height: 246px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* max-width: 100%; */
+  width: 30%;
+  position: absolute;
+  top: 130px;
+  right: 120px;
+}
+
+
+.secund__item {
+}
+
+/* header {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212529;
+  margin-top: 50px;
+  margin-left: 580px;
+  display: flex;
+} */
+
+.paragraph__title2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #4263eb;
+}
+
+.list__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text_titlee {
+  /* Fonts/Titles/title2 */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212529;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding-right: 19px;
+}
+
+.centerHeader {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  color: #fff;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.main__container {
+  padding: 0 120px;
+}
+
+.post {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 30px;
+  color: #212529;
+
+}
+
+#heard__button {
+  width: 26px;
+  height: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  color: #ffffff;
+  background-color: #212529;
+}
+
+.ul__container{
+    
+}

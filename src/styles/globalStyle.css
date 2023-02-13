@@ -1,0 +1,10 @@
+/* body {
+  padding: 0 120px;
+} */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font: 14px verdana;
+    box-sizing: border-box;
+  }
