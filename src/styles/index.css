@@ -1,5 +1,6 @@
-.first__item , .user__info {
-  padding-top: 130px;
+.first__item,
+.user__info {
+  padding-top: 54px;
   display: flex;
   align-items: flex-start;
   flex-direction: column-reverse;
@@ -9,9 +10,7 @@
 .list__item {
   display: flex;
   align-items: flex-start;
-
-  /* margin-left: 150px; */
-  margin-top: 50px;
+  margin-top: 52px;
   justify-content: space-between;
 
   width: 100%;
@@ -25,19 +24,14 @@
   padding-left: 15px;
 }
 
-
-
-.text__title{
+.text__title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  border: 2px solid red;
   margin-right: 70px;
-
 }
-
 
 .paragraph__title {
   font-family: "Inter";
@@ -50,27 +44,26 @@
 .form__container {
   display: flex;
   flex-direction: column;
+
   gap: 32px;
   width: 50%;
-  background-color: red;
   margin-top: 150px;
 }
 
 .button__submit {
-  display: flex;
-  justify-content: flex-end;
   margin-left: 630px;
-  width: 45px;
-  height: 17px;
+  width: 69px;
+  height: 38px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
-  background-color: #dee2e6;
+
+  background-color: var(--grey4);
 
   border-radius: 8px;
 }
+
 .input_container {
   border: 1px solid black;
   height: 40px;
@@ -95,8 +88,6 @@
   line-height: 28px;
   margin-top: 20px;
   margin-bottom: 30px;
-  /* text-overflow :ellipsis; */
-  /* width: 5ch; */
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -114,6 +105,8 @@
   background: #212529;
   border: 2px solid #212529;
   border-radius: 4px;
+
+  padding: 10px;
 }
 .post__item {
   display: flex;
@@ -150,28 +143,12 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  /* max-width: 100%; */
+
   width: 30%;
   position: absolute;
   top: 130px;
   right: 120px;
 }
-
-
-.secund__item {
-}
-
-/* header {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #212529;
-  margin-top: 50px;
-  margin-left: 580px;
-  display: flex;
-} */
 
 .paragraph__title2 {
   font-family: "Inter";
@@ -190,8 +167,6 @@
 }
 
 .text_titlee {
-  /* Fonts/Titles/title2 */
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -239,7 +214,6 @@ header {
   line-height: 40px;
   margin-top: 30px;
   color: #212529;
-
 }
 
 #heard__button {
@@ -250,11 +224,91 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  /* identical to box height, or 114% */
+
   color: #ffffff;
   background-color: #212529;
 }
 
-.ul__container{
-    
+.ul__container {
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: var(--grey-opacity-1);
+  backdrop-filter: blur(5px);
+
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.contentModal {
+  width: 761px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  gap: 32px;
+
+  border-radius: 8px;
+  background: var(--whiteFixed);
+}
+
+.headerModal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.closeButtonModal {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 150px;
+  background: var(--grey5);
+  color: var(--grey3);
+}
+
+.avatarModal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatarModal h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: var(--grey1);
+}
+
+.avatarModal small {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: var(--grey2);
+}
+
+.contentModal h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+
+  color: var(--grey1);
 }

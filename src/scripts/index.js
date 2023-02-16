@@ -5,8 +5,6 @@ function render(array) {
   array.forEach((post) => {
     const card = createCard(post, mainList);
   });
-
-  
 }
 
 function createCard(post, ul) {
@@ -66,8 +64,6 @@ function createCard(post, ul) {
 
 render(posts);
 
-//escrever uma funçao que captura um imput titulo e texto
-// inserir um objeto na lista de post e rendenizar a lista de post
 function preventForm() {
   const buttom = document.querySelector(".button__submit");
 
@@ -77,7 +73,29 @@ function preventForm() {
     const name = document.querySelector("#uname");
 
     const value = name.value;
-    // render();
+
+  
+    const titlePost = document.getElementById("uname");
+    const descriptionPost = document.getElementById("descriptionPost");
+
+    if ((titlePost.value && descriptionPost.value) !== "") {
+      posts.unshift({
+        id: posts.length + 1,
+        title: titlePost.value,
+        text: descriptionPost.value,
+        stack: "Front end Engineer",
+        user: "Samuel Leão",
+        img: "./src/assets/img/eclipse01.svg",
+        likes: 0,
+      });
+
+      render(posts);
+
+      titlePost.value = "";
+      descriptionPost.value = "";
+    }
+
+   
   });
 }
 

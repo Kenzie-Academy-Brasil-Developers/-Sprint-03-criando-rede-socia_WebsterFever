@@ -23,6 +23,39 @@
     <title>Criando rede social</title>
   </head>
   <body>
+    <div class="modal" id="overlay">
+      <div class="contentModal">
+        <div class="headerModal">
+          <div class="avatarModal">
+            <img
+              src="./src/assets/img/eclipse01.svg"
+              alt="image_from_Samuel_Leão"
+            />
+            <div>
+              <h1>Samuel Leão</h1>
+              <small>Front end Engineer</small>
+            </div>
+          </div>
+          <button class="closeButtonModal" id="closeModal">X</button>
+        </div>
+
+        <h2>
+          Como criar um interface simples e agradável utilizando boas práticas
+          de design
+        </h2>
+        <p>
+          Hoje vamos conversar sobre como criar uma interface agradável mesmo
+          sem ter um design pronto feito por um profissional de UI design. Antes
+          de iniciar a criação de qualquer projeto, busque referências de
+          aplicações que tenham a ver com o nicho que você está desenvolvendo.
+          Por exemplo, quando quero criar um e-commerce de roupas, vou reservar
+          um momento para buscar por aplicações do gênero, tanto acessando ou
+          baixando apps e vendo o que se repete de informações em cada um dos
+          aplicativos e sites referentes a compra de roupas, e também, observar
+          cores que normalmente você enxerga em cada um dos apps.
+        </p>
+      </div>
+    </div>
     <header>
       <div class="centerHeader">
         <p class="gene">TechPosters</p>
@@ -32,17 +65,6 @@
 
     <main class="main__container">
       <section class="user__info"></section>
-      <!-- <section> 
-          <div class="first__item">
-            <figure>
-              <img src="./src/assets/img/Ellipse 1.svg" alt="picture" />
-              <div class="head__item">
-                <h3 class="text__title">Samuel Leão</h3>
-                <br />
-                <p class="paragraph__title">Front end Engeneer</p>
-              </div>
-            </figure>
-          </div>   -->
 
       <form class="form__container" action="/form/submit" action="post">
         <!-- <textarea name="comment" rows="2" cols="70" placeholder="Digitar titulo do post"></textarea>  -->
@@ -60,128 +82,23 @@
           rows="9"
           cols="70"
           placeholder="Digitar descripção do post"
+          id="descriptionPost"
         ></textarea>
-        <!-- <input  type="submit" name="submitInfo" value="Postar" > -->
+
         <button class="button__submit">Postar</button>
       </form>
-      <!-- </section> -->
 
       <h2 class="post">Posts</h2>
 
-      <ul class="ul__container">
-        <!-- <li>
-        <div class="first__item">
-          <figure class="figure__container">
-            <img src="./src/assets/img/Ellipse 1.svg" alt="picture" />
-            <div class="head__item">
-              <h3 class="text__title">Samuel Leão</h3>
-              <p class="paragraph__title">Front end Engeneer</p>
-            </div>
-          </figure>
-        </div>
-        <div class="paragraph__texttitle">
-          <h3 class="paragraph__text">
-            Como criar um interface simples e agradável utilizando boas práticas
-            de design
-          </h3>
-        </div>
-        <div class="paragraph__texttitle2">
-          <p class="paragraph__text2">
-            A Framework Digital, empresa mineira especializada em Tecnologia da
-            Informação, irá iniciar o seu sexto programa de estágio, com o prazo
-            de inscrições entre os dias 08 e 28 de agosto. O programa é
-            conhecido como Framework Padawans, com inspiração nos filmes Star
-            Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar
-            cavaleiros Jedi, que compõem o lado bom da força."
-          </p>
-        </div>
-        <div class="post__item">
-          <button class="button__post" id="1">Abrir Post</button>
-          <img class="imgg" src="./src/assets/img/Vector.svg" alt="picture" />
-          <h6 class="number">25</h6>
-        </div>
-      </li>   -->
+      <ul class="ul__container"></ul>
 
-      </ul>
-      
-      <dialog id="modalController">
-        <!-- <div class="modal_container">
-          <div class="flex">
-            <h1 class="cad">Cadastro</h1>
-            <button id="closeModal">X</button>
-          </div>
-          <p class="paragraph001">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-            repudiandae provident, tenetur cumque enim magnam consequatur sed
-            quo doloremque id, beatae repellendus eum magni sequi saepe, ut
-            corporis. Sint, aut.
-          </p>
-          <form>
-            <label for="email"></label>
-            <input
-              class="email"
-              type="email"
-              id="email"
-              placeholder="Digitar E-mail"
-              name="email"
-            />
-            <br />
-          </form>
-        </div> -->
-
-        <!-- <button id="closeModal">X</button> -->
-      </dialog>
+      <dialog id="modalController"></dialog>
     </main>
 
     <aside class="cart__container">
       <h3 class="text_titlee">Sugestões para você seguir</h3>
 
-      <ul class="list__container">
-        <!-- <li class="list__item">
-          <figure>
-            <img src="./src/assets/img/Ellipse 1.svg" alt="picture" />
-          
-             <div class="head__item">
-              <h3 class="text__title">Samuel Leão</h3>
-              <br />
-              <p class="paragraph__title">Front end Engeneer</p>
-            </div>
-
-          </figure>
-
-            <p class="paragraph__title2">Seguindo</p>
-        </li>
-
-        <li class="list__item">
-          <figure>
-            <img src="./src/assets/img/Ellipse 1.svg" alt="picture" />
-          
-             <div class="head__item">
-              <h3 class="text__title">Samuel Leão</h3>
-              <br />
-              <p class="paragraph__title">Front end Engeneer</p>
-            </div>
-
-          </figure>
-
-            <p class="paragraph__title2">Seguindo</p>
-        </li>
-
-        <li class="list__item">
-          <figure>
-            <img src="./src/assets/img/Ellipse 1.svg" alt="picture" />
-          
-             <div class="head__item">
-              <h3 class="text__title">Samuel Leão</h3>
-              <br />
-              <p class="paragraph__title">Front end Engeneer</p>
-            </div>
-
-          </figure>
-
-            <p class="paragraph__title2">Seguindo</p>
-        </li> -->
-      </ul>
+      <ul class="list__container"></ul>
     </aside>
     <script src="./src/scripts/database.js"></script>
     <script src="./src/scripts/index.js"></script>
