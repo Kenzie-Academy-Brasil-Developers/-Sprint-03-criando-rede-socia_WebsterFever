@@ -95,7 +95,7 @@ function preventForm() {
       descriptionPost.value = "";
     }
 
-   
+    modalRender()
   });
 }
 
